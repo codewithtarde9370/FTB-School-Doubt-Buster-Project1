@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './StudentForm.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
@@ -38,12 +39,14 @@ const StudentDetailsForm = () => {
     return (
         <>
             <Toaster />
-            <form onSubmit={handleSubmit}>
+            <form >
+                <h1 className='justify-center f-w-3'>Student Register</h1>
                 <input
                     type="text"
                     name="name"
                     value={studentData.name}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Student Name"
                     required
                 />
@@ -52,6 +55,7 @@ const StudentDetailsForm = () => {
                     name="rollNo"
                     value={studentData.rollNo}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Roll Number"
                     required
                 />
@@ -60,6 +64,7 @@ const StudentDetailsForm = () => {
                     name="class"
                     value={studentData.class}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Class"
                     required
                 />
@@ -68,6 +73,7 @@ const StudentDetailsForm = () => {
                     name="div"
                     value={studentData.div}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Division"
                     required
                 />
@@ -76,6 +82,7 @@ const StudentDetailsForm = () => {
                     name="teacher"
                     value={studentData.teacher}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Teacher"
                     required
                 />
@@ -84,10 +91,13 @@ const StudentDetailsForm = () => {
                     name="parent"
                     value={studentData.parent}
                     onChange={handleChange}
+                    className='input-field'
                     placeholder="Parent"
                     required
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" onSubmit={handleSubmit}>
+                Submit
+                </button>
             </form>
         </>
     );
