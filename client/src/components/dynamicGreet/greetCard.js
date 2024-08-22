@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './greetCard.css';
+import logo from './logo.png'
 
 function GreetingCard() {
     const [greeting, setGreeting] = useState("");
@@ -46,6 +47,7 @@ function GreetingCard() {
 
     return (
         <header className="greeting-header">
+            <img src={logo} height={'50px'}/>
             <div className="greeting-content">
                 <h1 className="greet">{greeting}</h1>
                 <div className="time-date-wrapper">

@@ -4,7 +4,9 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast, Toaster } from 'react-hot-toast';
 import './Signup.css'
-import Register from './regiter.jpeg'
+import Register from './register.png'
+import GreetingCard from './../../components/dynamicGreet/greetCard.js'
+
 
 function Signup() {
   const [user, setUser] = useState({
@@ -53,16 +55,22 @@ function Signup() {
 
   return (
     <div className='main-div'>
+      <GreetingCard/>
       <Toaster />
-      <h1>Register</h1>
+     
       <div className="container row">
         <div className="col-md-6 col-sm-12">
-          <div className='d-block m-5 align-items-center'>  <img height={'200px'} src={Register}/><h1>Regiter...</h1></div>
+          <div className='d-block m-5 align-items-center'> <img height={'400px'} className='registerimg' src={Register}/>
+          <h1 className='slogun-main'>क्या आपको कोई शिकायत है!🤔...</h1>
+          <h2 className='slogun1'>Then</h2>
+          <h2 className='slogun'>Register.. &#38; Make Complaint..</h2>
+          </div>
         
 
         </div>
 
       <form className=' col-md-6 col-sm-12 registerForm'>
+      <h1 className='text-center'>Register</h1>
         <div className='md-5'>
           <label className="form-label">Full Name:</label>
           <input
@@ -113,7 +121,7 @@ function Signup() {
             <option value="admin">Principle</option>
           </select>
           <button type="submit"
-            className='btn mt-5 btn-light position-absolute translate-middle start-50 '
+            className='btn mt-5 position-absolute translate-middle start-50 '
             onClick={(e) => {
               e.preventDefault();
               signup();

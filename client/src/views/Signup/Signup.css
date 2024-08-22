@@ -1,13 +1,59 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
 .registerForm{
     border: 1px solid #a3a3a3;
-    border-radius: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 40%;
-    height: 650px;
-    padding: 30px;
-    margin: 50px auto;
+    height: 700px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 10px 70%;
     position: relative;
 
 }
 .form-label{
     margin-top: 12px;
+}
+.registerimg{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 8%;
+}
+.slogun-main{
+    position: absolute;
+    margin-top:23%;
+    margin-left: 9%;
+    font-size: 27px;
+    font-weight: 600;
+    color: #081A51;
+}
+.slogun1{
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 10%;
+    font-size: 22px;
+    font-weight: 700;
+}
+.slogun{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 9%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.btn{
+    background-color: #061437;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #4c6bc7;
+    color: #fff;
+}
+.form-label{
+    color: #081A51;
+    font-weight: 700;
 }

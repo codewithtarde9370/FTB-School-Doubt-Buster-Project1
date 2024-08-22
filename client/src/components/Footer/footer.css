@@ -1,0 +1,70 @@
+/* Footer Styles */
+.footer {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-top: 1px solid rgba(99, 92, 92, 0.1);
+    background-color: #b8c1ec; /* Light background to match card theme */
+  }
+  
+  .footer-grid {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-text h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #d3233d; /* Matching card title color */
+  }
+  
+  .footer-text p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .payment img {
+    height: 40px;
+    margin: 10px 5px;
+  }
+  
+  .footer-grid ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-grid li {
+    margin: 5px 0;
+  }
+  
+  .footer-grid a {
+    text-decoration: none;
+    color: #0C1844;
+  }
+  
+  .footer-grid a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media img {
+    height: 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: left;
+    }
+  
+    .footer-grid {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  
