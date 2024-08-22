@@ -57,7 +57,7 @@ function Signup() {
     <div className='main-div'>
       <GreetingCard/>
       <Toaster />
-     
+     <div style={{marginTop:'5%'}}>
       <div className="container row">
         <div className="col-md-6 col-sm-12">
           <div className='d-block m-5 align-items-center'> <img height={'400px'} className='registerimg' src={Register}/>
@@ -132,6 +132,7 @@ function Signup() {
       </form>
       <span>Do You Have Alredy Account?<Link to={'/login'}>Login </Link></span>
 
+    </div>
     </div>
     </div >
   );
