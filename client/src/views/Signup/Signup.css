@@ -21,6 +21,11 @@ body{
     position: relative;
 
 }
+.linktag{
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+}
 .img-div{
     width: 40%;
 }
@@ -45,6 +50,13 @@ body{
     margin-top: 26%;
     margin-left: 10%;
     font-size: 22px;
+    font-weight: 700;
+}
+.terms-n-Condition{
+    position: absolute;
+    margin-top: 33%;
+    margin-left: 15%;
+    font-size: 15px;
     font-weight: 700;
 }
 .slogun{

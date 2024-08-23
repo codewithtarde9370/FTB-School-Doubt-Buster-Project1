@@ -8,7 +8,6 @@ import Register from './register.png'
 import GreetingCard from './../../components/dynamicGreet/greetCard.js'
 import Footer from './../../components/Footer/footer.js'
 
-
 function Signup() {
   const [user, setUser] = useState({
     fullName: '',
@@ -45,22 +44,9 @@ function Signup() {
           password: '',
           role: '',
         });
-        setTimeout(() => {         switch (role) {
-          case 'student':
-            navigate('/student-details');
-            break;
-          case 'teacher':
-            navigate('/teacher-details');
-            break;
-          case 'parent':
-            navigate('/parent-details');
-            break;
-          case 'admin':
-            navigate('/admin-dashboard');
-            break;
-          default:
+        setTimeout(() => {       
             navigate('/login');
-        }
+        
  }, 1000)
       } else {
         toast.error(response.data.message || 'Signup failed.');
@@ -80,14 +66,16 @@ function Signup() {
           <div className='d-block m-2 align-items-center'> <img height={'400px'} className='registerimg' src={Register}/>
           <h1 className='slogun-main'>क्या आपको कोई शिकायत है!🤔...</h1>
           <h2 className='slogun1'>Then</h2>
-          <h2 className='slogun'>Register..✍🏻 &#38; Make Complaint..📝</h2>
+          <h2 className='slogun text-success'>Register..✍🏻 <span className='text-secondary-emphasis'>&#38;</span> <span className='text-primary'
+          >Make Complaint..📝</span></h2>
+          <h3 className='terms-n-Condition text-primary'><Link to={'/login'} style={{textDecoration:'none'}} className='text-secondary '>Terms & Condition </Link> Apply </h3>
           </div>
         
 
         </div>
 
       <form className=' col-md-6 col-sm-12 registerForm'>
-      <h1 className='text-center'>Register</h1>
+      <h1 className='text-center fw-bold'>Register✍🏻...</h1>
         <div className='md-5'>
           <label className="form-label">Full Name:</label>
           <input
@@ -146,7 +134,7 @@ function Signup() {
             Register
           </button>
         </div>
-        <span>Do You Have Alredy Account?<Link to={'/login'}>Login </Link></span>
+        <span className='linktag'>Do You Have Alredy Account?<Link style={{textDecoration:'none'}} to={'/login'}> Login </Link></span>
       </form>
    
 
