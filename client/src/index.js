@@ -45,7 +45,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1>404 Page not found</h1>
+    element: <h1 style={{textAlign:"center",fontWeight:'800',marginTop:'20%'}}>404 Page not found❌🥲 </h1>
   }
 ])
 root.render(<RouterProvider router={router}/>);
