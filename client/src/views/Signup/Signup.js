@@ -80,7 +80,7 @@ function Signup() {
             onChange={(e) => setUser({ ...user, fullName: e.target.value })}
           />
           <label className='form-label'>Email:</label>
-          <input
+          <inputd
             type="email"
             className="form-control"
             value={user.email}
