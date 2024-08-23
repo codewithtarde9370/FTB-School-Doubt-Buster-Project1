@@ -1,0 +1,32 @@
+.loginForm{
+    border: 1px solid #a3a3a3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 470px;
+    background-color: #fff;
+    padding: 40px;
+    position: relative;
+}
+.logbtn{
+    width: 80%;
+}
+.container1-div{
+    width: 40%;
+}
+.form-div{
+    width: 40%;
+}
+.login-slogun{
+    font-size: 32px;
+    font-weight: 600;
+}
+.login-slogun1{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.login-slogun2{
+    font-size: 28px;
+    font-weight: 300;
+}
