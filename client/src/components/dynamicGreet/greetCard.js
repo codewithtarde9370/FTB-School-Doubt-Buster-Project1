@@ -25,13 +25,13 @@ function GreetingCard() {
 
             let greetingMessage = "";
             if (hours >= 5 && hours < 12) {
-                greetingMessage = "Good Morning!";
+                greetingMessage = "Good Morning 🌞..";
             } else if (hours >= 12 && hours < 17) {
-                greetingMessage = "Good Afternoon!";
+                greetingMessage = "Good Afternoon🌤️";
             } else if (hours >= 17 && hours < 22) {
-                greetingMessage = "Good Evening!";
+                greetingMessage = "Good Evening🌇";
             } else {
-                greetingMessage = "Good Night!";
+                greetingMessage = "Good Night🌙";
             }
 
             setTime(timeString);
@@ -47,7 +47,7 @@ function GreetingCard() {
 
     return (
         <header className="greeting-header">
-            <img src={logo} height={'50px'}/>
+            <img src={logo} height={'35px'}/>
             <div className="greeting-content">
                 <h1 className="greet">{greeting}</h1>
                 <div className="time-date-wrapper">

@@ -6,6 +6,7 @@ import { toast, Toaster } from 'react-hot-toast';
 import './Signup.css'
 import Register from './register.png'
 import GreetingCard from './../../components/dynamicGreet/greetCard.js'
+import Footer from './../../components/Footer/footer.js'
 
 
 function Signup() {
@@ -44,7 +45,23 @@ function Signup() {
           password: '',
           role: '',
         });
-        setTimeout(() => { navigate('/'); }, 1000)
+        setTimeout(() => {         switch (role) {
+          case 'student':
+            navigate('/student-details');
+            break;
+          case 'teacher':
+            navigate('/teacher-details');
+            break;
+          case 'parent':
+            navigate('/parent-details');
+            break;
+          case 'admin':
+            navigate('/admin-dashboard');
+            break;
+          default:
+            navigate('/login');
+        }
+ }, 1000)
       } else {
         toast.error(response.data.message || 'Signup failed.');
       }
@@ -57,13 +74,13 @@ function Signup() {
     <div className='main-div'>
       <GreetingCard/>
       <Toaster />
-     
-      <div className="container row">
-        <div className="col-md-6 col-sm-12">
-          <div className='d-block m-5 align-items-center'> <img height={'400px'} className='registerimg' src={Register}/>
+     <div style={{marginTop:'7%',marginBottom:'10%'}}>
+      <div className="container-div row">
+        <div className="col-md-6 img-div col-sm-12">
+          <div className='d-block m-2 align-items-center'> <img height={'400px'} className='registerimg' src={Register}/>
           <h1 className='slogun-main'>क्या आपको कोई शिकायत है!🤔...</h1>
           <h2 className='slogun1'>Then</h2>
-          <h2 className='slogun'>Register.. &#38; Make Complaint..</h2>
+          <h2 className='slogun'>Register..✍🏻 &#38; Make Complaint..📝</h2>
           </div>
         
 
@@ -129,10 +146,14 @@ function Signup() {
             Register
           </button>
         </div>
+        <span>Do You Have Alredy Account?<Link to={'/login'}>Login </Link></span>
       </form>
-      <span>Do You Have Alredy Account?<Link to={'/login'}>Login </Link></span>
+   
 
     </div>
+    </div>
+    <Footer/>
+  
     </div >
   );
 }

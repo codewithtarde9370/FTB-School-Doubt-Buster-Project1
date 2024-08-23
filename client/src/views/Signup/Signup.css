@@ -2,17 +2,27 @@ body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
 }
+.container-div{
+    width: 100%;
+}
+.row{
+    display: flex;
+    width: 100%;
+}
 .registerForm{
     border: 1px solid #a3a3a3;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    height: 700px;
+    width: 38%;
+    height: 750px;
     background-color: #fff;
     padding: 40px;
-    margin: 10px 70%;
+    margin: 10px 55%;
     position: relative;
 
+}
+.img-div{
+    width: 40%;
 }
 .form-label{
     margin-top: 12px;
